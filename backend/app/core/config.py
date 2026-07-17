@@ -29,7 +29,7 @@ class Settings:
     USE_VERTEX_AI: bool = os.getenv("USE_VERTEX_AI", "false").lower() == "true"
 
     # --- CORS ---
-    ALLOWED_ORIGINS: list = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000").split(",")
+    ALLOWED_ORIGINS: list = os.getenv("ALLOWED_ORIGINS", "https://github.com/syedbasha27/smart_stadium").split(",")
 
     # --- Demo / offline mode ---
     # When no Gemini key is configured, the API still runs using rule-based
